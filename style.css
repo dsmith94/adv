@@ -1,7 +1,7 @@
 body {
     /* default layout */
     margin: 5% 15% 10% 15%;
-    font-size: 2.5em;
+    font-size: 1.5em;
 }
 @media screen and (max-width: 420px) {
     body {

@@ -1,12 +1,18 @@
+:root {
+    --main-highlight-color: #1273b4;
+    --main-text-color: #000000;
+    --main-bg-color: #f8f8f8;
+}
+
 body {
     /* default layout */
-    margin: 5% 15% 10% 15%;
+    margin: 8% 15% 10% 15%;
     font-size: 1.5em;
 }
 @media screen and (max-width: 420px) {
     body {
         /* for small smart devices */
-        margin: 2% 8% 5% 8%;
+        margin: 8% 8% 5% 8%;
         font-size: 1.0em;
     }
 }
@@ -21,14 +27,27 @@ body {
     to   { opacity: 0; /* margin-left: -10%; */ }
 }
 
-* {
-	color: #000000;
- 	font-family: Georgia, serif;
+
+#Mmnu-Button {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    color: var(--main-highlight-color);
+    float: right;
+    font-size: 1em;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
 }
 
 
 body {
-    background-color: #f8f8f8;
+    color: var(--main-text-color);
+    font-family: Georgia, serif;
+    background-color: var(--main-bg-color);
 }
 
 
@@ -38,7 +57,7 @@ p::first-line {
 
 
 .drop {
-	color: #1273b4;
+	color: var(--main-highlight-color);
 	font-family: Arial, Helvetica, sans-serif;
 	float: bottom;
     font-size: 3em;
@@ -54,7 +73,7 @@ p::first-line {
 }
 
 .actionButton {
-    color: #1273b4;
+    color: var(--main-highlight-color);
     font-size: 2em;
     background-color: Transparent;
     background-repeat:no-repeat;
@@ -64,8 +83,25 @@ p::first-line {
     outline:none;
 }
 
+#Menu-Button {
+    border: none;
+    color: var(--main-highlight-color);
+    display: block;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    right: 2%;
+    top: 2%;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
 #Next-Button {
-    color: #1273b4;
+    color: var(--main-highlight-color);
     float: right;
     font-size: 3em;
     background-color: Transparent;
@@ -76,7 +112,7 @@ p::first-line {
     outline:none;
 }
 
-h2 { color: #1273b4; font-family: Arial, Helvetica, sans-serif; font-weight: normal; }
+h2 { color: var(--main-highlight-color); font-family: Arial, Helvetica, sans-serif; font-weight: normal; }
 h3 { font-family: Georgia, serif; font-weight: normal; }
-a { color: #1273b4; text-decoration: none; }
-a:hover { color: #1273b4; text-decoration: underline; }
+a { color: var(--main-highlight-color); text-decoration: none; }
+a:hover { color: var(--main-highlight-color); text-decoration: underline; }

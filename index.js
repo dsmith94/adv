@@ -275,7 +275,7 @@ function showRoom() {
                     var x = d.indexOf(`$${thing.id}`);
                     var len = thing.id.length;
                     d = d.slice(0, x) +
-                    `<a href="#" onclick="handleThingFocus('${thing.id}');">${thing.desc()}</a>` +
+                    `<a href="javascript:void(0);" onclick="handleThingFocus('${thing.id}');">${thing.desc()}</a>` +
                     d.slice(x + len + 1, d.length);
                 }
             }
@@ -289,7 +289,7 @@ function showRoom() {
                                 var x = d.indexOf(`@${topic}`);
                                 var len = topic.length;
                                 d = d.slice(0, x) +
-                                `<a href="#" onclick="handleTopic('${topic}');">${topic}</a>` +
+                                `<a href="javascript:void(0);" onclick="handleTopic('${topic}');">${topic}</a>` +
                                 d.slice(x + len + 1, d.length);
                             }
                         }
@@ -332,7 +332,7 @@ function setText(text) {
 
 function buildActionsHTML(id, actions) {
     var r = ``;
-    const openTag = `<a href="#" onclick="handleThingAction(`;
+    const openTag = `<a href="javascript:void(0);" onclick="handleThingAction(`;
     const closeTag = `</a>`;
     var thing = game.currentRoom.getThingById(id);
     if (id && actions && thing) {

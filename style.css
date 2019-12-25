@@ -6,7 +6,7 @@ body {
 @media screen and (max-width: 420px) {
     body {
         /* for small smart devices */
-        margin: 2% 8% 5% 8%;
+        margin: 5% 8% 5% 8%;
         font-size: 1.0em;
     }
 }

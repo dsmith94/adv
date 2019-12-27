@@ -2,6 +2,15 @@ var game;
 var nextButtonVisible = false;
 
 
+function setStyleSheet(url, filename) {
+    var index = 0;
+    if (filename === "fonts") {
+        index = 1;
+    }
+    document.getElementsByTagName('head')[index].getElementById('stylesheet').href = url;
+}
+
+
 function lookForBreaks(text) {
     var s = ``;
     var skip = false;

@@ -1,18 +1,13 @@
-:root {
-    --main-highlight-color: #1273b4;
-    --main-text-color: #000000;
-    --main-bg-color: #f8f8f8;
-}
 
 body {
     /* default layout */
-    margin: 8% 15% 10% 15%;
+    margin: 0% 15% 10% 15%;
     font-size: 1.5em;
 }
 @media screen and (max-width: 420px) {
     body {
         /* for small smart devices */
-        margin: 8% 8% 5% 8%;
+        margin: 0% 8% 5% 8%;
         font-size: 1.0em;
     }
 }
@@ -28,7 +23,7 @@ body {
 }
 
 
-#Mmnu-Button {
+#Menu-Button {
     position: absolute;
     right: 2%;
     top: 2%;
@@ -46,8 +41,10 @@ body {
 
 body {
     color: var(--main-text-color);
-    font-family: Georgia, serif;
+    font-family: var(--main-text-font);
     background-color: var(--main-bg-color);
+    height: 100%;
+    min-height: 100%;
 }
 
 
@@ -56,20 +53,57 @@ p::first-line {
 }
 
 
+#Page-header {
+    padding: 10px;
+    margin: 0% 0% 5% 0%;
+    left:0;
+    right:0;
+    text-align: center;
+    position: absolute;
+    font-size: 0.75em;
+    font-style: italic;
+    text-decoration-line: underline;
+}
+
+
+#Page-top {
+    border: 0;
+    height: 0;
+    position: absolute;
+    right: 15%;
+    top: 5%;
+    left: 15%;
+    border-bottom: 1px solid var(--main-highlight-color);
+}
+
+
+#Page-bottom {
+    position: absolute;
+    right: 15%;
+    bottom: 5%;
+    left: 15%;
+    border: 0;
+    height: 0;
+    border-bottom: 1px solid var(--main-highlight-color);
+}
+
+
 .drop {
 	color: var(--main-highlight-color);
-	font-family: Arial, Helvetica, sans-serif;
-	float: bottom;
-    font-size: 3em;
-    line-height: 0.5em;
+	font-family: var(--main-accent-font);
+	font-size: 3em;
+    float: left;
+    line-height: 1;
+    margin-right: 0.05em;
+    margin-top: -0.1em;
 }
 
 .emphasis {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--main-emphasis-font);
     font-size: 1.1em;
     margin-left:auto;
     margin-right:auto;
-    width: 60%;
+    width: 90%;
 }
 
 .actionButton {
@@ -83,22 +117,11 @@ p::first-line {
     outline:none;
 }
 
-#Menu-Button {
-    border: none;
-    color: var(--main-highlight-color);
-    display: block;
-    position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
-    right: 1%;
-    top: 1%;
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
+
+#Readout {
+    margin-top: 8%;
 }
+
 
 #Next-Button {
     color: var(--main-highlight-color);
@@ -112,7 +135,7 @@ p::first-line {
     outline:none;
 }
 
-h2 { color: var(--main-highlight-color); font-family: Arial, Helvetica, sans-serif; font-weight: normal; }
-h3 { font-family: Georgia, serif; font-weight: normal; }
+h2 { color: var(--main-highlight-color); color: var(--main-accent-font); font-weight: normal; }
+h3 { font-family: var(--main-text-font); font-weight: normal; }
 a { color: var(--main-highlight-color); text-decoration: none; }
 a:hover { color: var(--main-highlight-color); text-decoration: underline; }

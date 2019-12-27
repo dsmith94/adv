@@ -1,0 +1,16 @@
+@font-face {
+    font-family: commodore;
+    src: url(Commodore-64-v6.3.TTF);
+}
+
+
+@font-face {
+    font-family: eightbit;
+    src: url(alagard.ttf);
+}
+
+:root {
+    --main-text-font: commodore, "DejaVu Serif", Georgia, "Times New Roman", Times, serif;
+    --main-accent-font: eightbit, Verdana, Arial;
+    --main-emphasis-color: eightbit, "Courier New", "Lucida Console", Courier;
+}

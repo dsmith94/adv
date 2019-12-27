@@ -165,7 +165,7 @@ function finishSetText(text) {
     else {
         b.innerHTML = `<br />&nbsp;<br /><hr id="Page-hr" />`;
     }
-
+}
 
 
 function finishActionAnimation(e) {

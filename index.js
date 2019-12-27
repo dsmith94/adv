@@ -157,7 +157,16 @@ function finishSetText(text) {
         e.style.animation = 'fadein 0.25s';
         e.innerHTML = fixQuotes(text);
     }
+    const h = document.getElementById("Readout").offsetHeight;
+    const b = document.getElementById("page-bottom-div");
+    if (h < (window.innerHeight * 0.75)) {
+        b.innerHTML = `<hr id="Page-bottom" />`;        
+    }
+    else {
+        b.innerHTML = `<hr id="Page-hr" />`;
+    }
 }
+
 
 
 function finishActionAnimation(e) {
@@ -327,6 +336,7 @@ function getThing(id) {
 function setText(text) {
     const e = document.getElementById("Readout");
     const a = document.getElementById("Actions");
+    const b = document.getElementById("page-bottom-div");
     if (e) {
         var t = handleStringCaps(text);
         e.style.animation = 'fadeout 0.25s';
@@ -335,6 +345,13 @@ function setText(text) {
     if (a) {
         a.style.opacity = 0;
         window.setTimeout(function() { finishActionAnimation(a); }, 505);
+    }
+    var h = document.getElementById("Readout").offsetHeight;
+    if (h < (window.innerHeight - 100)) {
+        b.innerHTML = `<hr id="Page-bottom" />`;        
+    }
+    else {
+        b.innerHTML = `<hr id="Page-hr" />`;
     }
 }
 

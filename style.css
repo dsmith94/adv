@@ -69,10 +69,19 @@ p::first-line {
 #Page-top {
     border: 0;
     height: 0;
-    position: absolute;
     right: 15%;
     top: 5%;
     left: 15%;
+    border-bottom: 1px solid var(--main-highlight-color);
+}
+
+
+#Page-hr {
+    border: 0;
+    height: 0;
+    right: 15%;
+    left: 15%;
+    margin-top: 20%;
     border-bottom: 1px solid var(--main-highlight-color);
 }
 

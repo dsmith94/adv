@@ -1,4 +1,4 @@
-var game;
+﻿var game;
 var nextButtonVisible = false;
 
 
@@ -163,9 +163,8 @@ function finishSetText(text) {
         b.innerHTML = `<hr id="Page-bottom" />`;        
     }
     else {
-        b.innerHTML = `<hr id="Page-hr" />`;
+        b.innerHTML = `<br />&nbsp;<br /><hr id="Page-hr" />`;
     }
-}
 
 
 
